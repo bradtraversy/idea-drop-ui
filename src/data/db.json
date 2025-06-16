@@ -1,0 +1,52 @@
+{
+  "ideas": [
+    {
+      "id": "1",
+      "title": "Airbnb for Garages",
+      "summary": "Rent out your garage for storage or parking.",
+      "description": "This platform allows homeowners to monetize unused garage space by offering it for short- or long-term storage, parking, or even micro-offices. Think Airbnb, but for underutilized residential garages. It could also provide insurance, keyless access, and a rating system for trust and safety.",
+      "tags": ["real estate", "marketplace", "sharing economy"],
+      "createdAt": "2025-04-27T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "title": "Local Farm Box Subscription",
+      "summary": "Weekly produce delivery from nearby farms.",
+      "description": "A subscription box service connecting local farmers with urban dwellers looking for fresh produce. Customers receive a curated box each week containing fruits, vegetables, and artisanal goods sourced directly from nearby growers. It encourages local commerce, healthy eating, and seasonal variety.",
+      "tags": ["subscription", "local", "marketplace"],
+      "createdAt": "2025-04-28T14:30:00.000Z"
+    },
+    {
+      "id": "3",
+      "title": "Micro-SaaS for Freelancers",
+      "summary": "A personal dashboard to manage freelance work.",
+      "description": "A lightweight SaaS platform that helps freelancers track their clients, invoices, contracts, and income in one place. Built specifically for solopreneurs who don’t need bulky CRM tools but want visibility into their business and finances. Includes tax estimates, recurring invoice reminders, and expense logging.",
+      "tags": ["freelance", "saas", "tools"],
+      "createdAt": "2025-04-29T09:15:00.000Z"
+    },
+    {
+      "id": "4",
+      "title": "Virtual Closet Organizer",
+      "summary": "Your wardrobe, digitized and AI-personalized.",
+      "description": "An app that lets users take pictures of their clothes and upload them into a virtual closet. The app uses AI to suggest daily outfits based on the weather, calendar events, and style preferences. Features might include travel packing lists, outfit tracking, and a sharing option for friends to browse each other's closets.",
+      "tags": ["fashion", "ai", "productivity"],
+      "createdAt": "2025-04-25T16:45:00.000Z"
+    },
+    {
+      "id": "5",
+      "title": "Pet Sitter Marketplace",
+      "summary": "Book trusted sitters and walkers in your area.",
+      "description": "A two-sided platform where pet owners can find, book, and review local pet sitters and dog walkers. All providers go through background checks and can create profiles with availability, pricing, and services offered. Includes messaging, GPS walk tracking, and emergency contact sharing.",
+      "tags": ["pets", "marketplace", "local"],
+      "createdAt": "2025-04-26T11:20:00.000Z"
+    },
+    {
+      "id": "6",
+      "title": "Remote Job Recommender",
+      "summary": "Smart job matches using your online presence.",
+      "description": "An AI-powered platform that analyzes your GitHub, LinkedIn, resume, and public portfolios to find remote jobs that align with your skills and goals. Users receive a daily or weekly feed of tailored listings, and the system learns from their clicks and applications to improve recommendations over time.",
+      "tags": ["jobs", "remote", "ai"],
+      "createdAt": "2025-04-24T13:10:00.000Z"
+    }
+  ]
+}

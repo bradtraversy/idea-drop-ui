@@ -5,7 +5,7 @@ import {
   useSuspenseQuery,
   queryOptions,
 } from '@tanstack/react-query';
-import { fetchIdea } from '@/api/ideas';
+import { fetchIdea, updateIdea } from '@/api/ideas';
 
 const ideaQueryOptions = (id: string) =>
   queryOptions({
@@ -30,6 +30,27 @@ function IdeaEditPage() {
   const [description, setDescription] = useState(idea.description);
   const [tagsInput, setTagsInput] = useState(idea.tags.join(', '));
 
+  const { mutateAsync, isPending } = useMutation({
+    mutationFn: () =>
+      updateIdea(ideaId, {
+        title,
+        summary,
+        description,
+        tags: tagsInput
+          .split(',')
+          .map((t) => t.trim())
+          .filter(Boolean),
+      }),
+    onSuccess: () => {
+      navigate({ to: '/ideas/$ideaId', params: { ideaId } });
+    },
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    await mutateAsync();
+  };
+
   return (
     <div className='space-y-4'>
       <div className='flex justify-between items-center mb-4'>
@@ -42,7 +63,7 @@ function IdeaEditPage() {
           ← Back To Idea
         </Link>
       </div>
-      <form className='space-y-2'>
+      <form onSubmit={handleSubmit} className='space-y-2'>
         <div>
           <label
             htmlFor='title'
@@ -114,9 +135,10 @@ function IdeaEditPage() {
         <div className='mt-5'>
           <button
             type='submit'
+            disabled={isPending}
             className='block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-md transition disabled:opacity-50 disabled:cursor-not-allowed'
           >
-            Update Idea
+            {isPending ? 'Updating...' : 'Update Idea'}
           </button>
         </div>
       </form>

@@ -25,7 +25,6 @@
       "createdAt": "2025-04-28T14:30:00.000Z"
     },
     {
-      "id": "3",
       "title": "Micro-SaaS for Freelancers",
       "summary": "A personal dashboard to manage freelance work.",
       "description": "A lightweight SaaS platform that helps freelancers track their clients, invoices, contracts, and income in one place. Built specifically for solopreneurs who don’t need bulky CRM tools but want visibility into their business and finances. Includes tax estimates, recurring invoice reminders, and expense logging.",
@@ -34,7 +33,7 @@
         "saas",
         "tools"
       ],
-      "createdAt": "2025-04-29T09:15:00.000Z"
+      "id": "3"
     },
     {
       "id": "4",

@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from '@tanstack/react-router';
+import { createFileRoute } from '@tanstack/react-router';
 import { Lightbulb } from 'lucide-react';
 import { fetchIdeas } from '@/api/ideas';
 import { queryOptions, useSuspenseQuery } from '@tanstack/react-query';
@@ -42,7 +42,7 @@ function HomePage() {
         </h2>
         <div className='space-y-6'>
           {latestIdeas.map((idea) => (
-            <IdeaCard key={idea.id} idea={idea} button={false} />
+            <IdeaCard key={idea._id} idea={idea} button={false} />
           ))}
         </div>
 

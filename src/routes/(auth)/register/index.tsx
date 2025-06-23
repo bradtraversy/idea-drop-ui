@@ -16,24 +16,24 @@ function RegisterPage() {
       <form className='space-y-4'>
         <input
           type='text'
+          className='w-full border border-gray rounded-md p-2'
           placeholder='Name'
-          className='w-full border border-gray-300 rounded-md p-2'
           value={name}
           onChange={(e) => setName(e.target.value)}
           autoComplete='off'
         />
         <input
           type='email'
+          className='w-full border border-gray rounded-md p-2'
           placeholder='Email'
-          className='w-full border border-gray-300 rounded-md p-2'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           autoComplete='off'
         />
         <input
           type='password'
+          className='w-full border border-gray rounded-md p-2'
           placeholder='Password'
-          className='w-full border border-gray-300 rounded-md p-2'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           autoComplete='off'
@@ -45,10 +45,7 @@ function RegisterPage() {
 
       <p className='text-sm text-center mt-4'>
         Already have an account?{' '}
-        <Link
-          to='/login'
-          className='text-blue-600 hover:text-blue-700 hover:underline font-medium'
-        >
+        <Link to='/login' className='text-blue-600 hover:underline font-medium'>
           Login
         </Link>
       </p>

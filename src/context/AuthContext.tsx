@@ -1,10 +1,9 @@
-import type { ReactNode } from '@tanstack/react-router';
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState, type ReactNode } from 'react';
 
 type AuthContextType = {
   accessToken: string | null;
-  setAccessToken: (token: string | null) => void;
-  user: { id: string; name: string; email: string } | null;
+  setAccessToken: (token: string) => void;
+  user: { id: string; email: string; name: string } | null;
   setUser: (user: AuthContextType['user']) => void;
 };
 
@@ -25,6 +24,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
 export const useAuth = () => {
   const context = useContext(AuthContext);
-  if (!context) throw new Error('useAuth must be  used within AuthProvider');
+  if (!context) throw new Error('useAuth must be used within a provider');
   return context;
 };

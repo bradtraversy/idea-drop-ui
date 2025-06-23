@@ -15,16 +15,16 @@ function LoginPage() {
       <form className='space-y-4'>
         <input
           type='email'
+          className='w-full border border-gray rounded-md p-2'
           placeholder='Email'
-          className='w-full border border-gray-300 rounded-md p-2'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           autoComplete='off'
         />
         <input
           type='password'
+          className='w-full border border-gray rounded-md p-2'
           placeholder='Password'
-          className='w-full border border-gray-300 rounded-md p-2'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           autoComplete='off'
@@ -38,7 +38,7 @@ function LoginPage() {
         Don't have an account?{' '}
         <Link
           to='/register'
-          className='text-blue-600 hover:text-blue-700 hover:underline font-medium'
+          className='text-blue-600 hover:underline font-medium'
         >
           Register
         </Link>

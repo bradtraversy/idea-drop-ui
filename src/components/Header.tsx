@@ -64,7 +64,7 @@ const Header = () => {
             </>
           ) : (
             <>
-              <span className='text-gray-700 font-medium px-2'>
+              <span className='hidden sm:block text-gray-700 font-medium px-2'>
                 Welcome, {user.name}
               </span>
               <button
